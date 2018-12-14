@@ -1,0 +1,2230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none !important;
+}
+p{
+    letter-spacing: .8px;
+}
+img{
+    border: 0px;
+}
+h1,h2,h3,h4,h5,h6,ol,ul,p,address{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@font-face{
+    font-family:Helvetica;
+    src: url(../fonts/HelveticaLTStd-Roman.otf);
+}
+@font-face{
+    font-family: proxinova_reg;
+    src: url(../fonts/Proxinova_reg.otf);
+}
+@font-face{
+    font-family: proxinova_bold;
+    src: url(../fonts/Proxinova_bold.otf);
+}
+@font-face{
+    font-family: proxinova_light;
+    src: url(../fonts/Proxinova_light.otf);
+}
+@font-face{
+    font-family:Cyr_roman;
+    src: url(../fonts/HelveticaNeueCyr-Roman.otf);
+}
+body{
+    background: #f9f9f9;
+    font-family:Helvetica;
+}
+.photo {
+    margin-bottom: 3%;
+}
+/*--main css start now--*/
+
+/* menu area */
+.navber-area {
+	background: #333;
+}
+.navber-area .panel.panel-default {
+  border: none;
+  margin-bottom: 0;
+  background:none;
+}
+.navber-area #myTab {
+  border: none;
+}
+.navber-area #myTab li a {
+  border: none;
+}
+.navber-area .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+	border-radius: 0 !important;
+	background-color:#e8e8e8;
+	color:#000 !important;
+}
+.navber-area #myTab li a {
+	border: none;
+	padding: 20px 17px;
+	color: #fff;
+	margin: 0;
+	border-radius: 0 !important;
+}
+.navber-area .panel-body {
+	padding: 0;
+}
+.image-main {
+	width: 35px;
+	height: auto;
+	margin-right: 10px;
+	margin-top: -3px;
+}
+
+/* header area start */
+
+
+#ntoolbar {
+    background-color: #333;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+
+}
+
+#ntoolbar > div {
+    position: relative;
+}
+
+#ntoolbar > div:not(:first-child) {
+    margin-left: 1px;
+}
+
+#ntoolbar > div:not(:first-child):after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: url('/i/img/site/toolbar/icons/block_line.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    top: 0;
+    left: -2px;
+}
+
+#ntoolbar > div > .btn {
+    border-radius: 0;
+    height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+#ntoolbar > div > .btn:hover, #ntoolbar > div > .btn:focus {
+    color: #fff;
+}
+
+@media (max-width: 545px) {
+    #ntoolbar > div > .btn {
+        padding: 5px 9px;
+    }
+}
+
+@media (max-width: 360px) {
+    #ntoolbar > div > .btn {
+        padding: 5px 5px;
+    }
+}
+
+#ntoolbar > div > .btn[aria-expanded="true"] {
+    background-color: #e8e8e8;
+    border-color: #e8e8e8;
+    color: #5b5757;
+}
+
+#ntoolbar > div > .btn[aria-expanded="true"]::-moz-focus-inner {
+    border: none;
+    outline: 0;
+}
+
+#ntoolbar > div > .btn[aria-expanded="true"]:focus {
+    border: none;
+    outline: 0;
+}
+
+#ntoolbar > div > .btn > svg {
+    fill: rgb(255, 255, 255);
+}
+
+#ntoolbar > div > .btn[aria-expanded="true"] > svg {
+    fill: rgb(127, 12, 12);
+}
+
+#ntoolbar > div > .btn > span {
+    align-self: center;
+}
+
+#ntoolbar > div > .btn > span.caption {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+body > header [id^="toolbarCollapse"] {
+    background-color: #e9e9e9;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: #5b5757;
+    font-size: 11pt;
+    overflow: hidden;
+    text-align: center;
+}
+
+body > header [id^="toolbarCollapse"] a {
+    color: #5b5757;
+}
+
+body > header [id^="toolbarCollapse"] > div {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+body > header [id^="toolbarCollapse"] > div.right {
+    max-width: 720px;
+    padding-left: 450px;
+}
+
+body > header [id^="toolbarCollapse"] > div.left .image-block {
+    right: 0;
+}
+.width-area{
+	width:62%;
+	margin: 0 auto;
+}
+.width-tr{
+	width:65%;
+	margin:0 auto;
+}
+.langu {
+	width: 65%;
+	margin: 0 auto;
+}
+body > header [id^="toolbarCollapse"] > div.right .image-block {
+    left: 0;
+}
+
+body > header [id^="toolbarCollapse"] > div .image-block {
+    position: absolute;
+    width: 400px;
+    height: 60%;
+    bottom: -15px;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-align: center;
+	top:0;
+}
+
+body > header [id^="toolbarCollapse"] > div .image-block > h3, body > header [id^="toolbarCollapse"] > div .image-block > a {
+    position: relative;
+    font-size: 13px;
+    line-height: 1.5;
+    text-transform: none;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+body > header [id^="toolbarCollapse"] > div .image-block > a:hover, body > header [id^="toolbarCollapse"] > div .image-block > a:focus {
+    color: #800;
+}
+
+/* Do HardCode */
+/* Thank you OC for this */
+body > header [id^="toolbarCollapse"] > div .image-block > a[data-alias="toolbar_open_account_image_title_2"] {
+    padding-right: 65px;
+}
+
+body.language-ru > header [id^="toolbarCollapse"] > div .image-block > h3[data-alias="toolbar_open_account_image_title_2"],
+body.language-ua > header [id^="toolbarCollapse"] > div .image-block > h3[data-alias="toolbar_open_account_image_title_2"],
+body.language-az > header [id^="toolbarCollapse"] > div .image-block > h3[data-alias="toolbar_open_account_image_title_2"],
+body.language-oz > header [id^="toolbarCollapse"] > div .image-block > h3[data-alias="toolbar_open_account_image_title_2"],
+body.language-uz > header [id^="toolbarCollapse"] > div .image-block > h3[data-alias="toolbar_open_account_image_title_2"],
+body.language-kk > header [id^="toolbarCollapse"] > div .image-block > h3[data-alias="toolbar_open_account_image_title_2"] {
+    padding-right: 43px;
+}
+
+/* / Do HardCode */
+body > header [id^="toolbarCollapse"] > div .image-block > img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+body > header [id^="toolbarCollapse"] > div .promo-block {
+    width: 425px;
+    margin-left: 0;
+    margin-right: 25px;
+    text-align: left;
+    color: #5b5757;
+    z-index: 1;
+}
+
+body > header [id^="toolbarCollapse"] > div .promo-block h2 {
+    font-size: 18pt;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-transform: none;
+    color: #000000;
+}
+
+body > header [id^="toolbarCollapse"] > div .promo-block h2 > span {
+    display: block;
+    font-weight: 100;
+    font-size: 95%;
+}
+
+body > header [id^="toolbarCollapse"] > div .promo-block p, body > header [id^="toolbarCollapse"] > div .promo-block ul li {
+    font-size: 14.6667px;
+}
+
+body > header [id^="toolbarCollapse"] > div .promo-block p a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body > header [id^="toolbarCollapse"] > div .promo-block p a:hover, body > header [id^="toolbarCollapse"] > div .promo-block p a:focus {
+    color: #7f0c0c;
+}
+
+body > header [id^="toolbarCollapse"] > div .promo-block a {
+    font-size: 11pt;
+}
+
+body > header [id^="toolbarCollapse"] > div .main-block {
+    width: 365px;
+    z-index: 2;
+}
+
+body > header [id^="toolbarCollapse"] > div .main-block h2, body > header [id^="toolbarCollapse"] > div > h2 {
+    display: none;
+    color: #7f0c0c;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+body > header [id^="toolbarCollapse"] > div form {
+    width: 100%;
+}
+
+body > header [id^="toolbarCollapse"] > div form .fastbannerform__flex {
+    width: 100%;
+    min-height: unset;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+body > header [id^="toolbarCollapse"] > div form .fastbannerform__flex .fastbannerform__flex__botton {
+    margin-top: 11px;
+}
+
+body > header [id^="toolbarCollapse"] > div form .fastbannerform__flex .fastbannerform__flex__botton button:not(.btn-preloader), body > header [id^="toolbarCollapse"] > div form .fastbannerform__flex .fastbannerform__flex__botton input[type="submit"], body > header [id^="toolbarCollapse"] > div form .fastbannerform__flex .fastbannerform__flex__botton a.btn {
+    width: 100%;
+    display: block;
+    margin: 11px auto 0;
+    padding: 15px 10px;
+}
+
+body > header [id^="toolbarCollapse"] form .btn-preloader {
+    max-width: 100%;
+    background: transparent;
+    border-color: transparent;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+body > header [id^="toolbarCollapse"] form .btn-preloader > i {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#toolbarCollapseOpenAccount form .fastbannerform__login {
+    background: rgba(255, 255, 255, 0.65);
+    padding: 20px;
+}
+
+.select2-container.select2-container--default .select2-dropdown .select2-results > .select2-results__options {
+    max-height: 265px;
+}
+
+#toolbarCollapseSearch > div {
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#toolbarCollapseSearch > div > a {
+    margin-left: 15px;
+    font-size: 85%;
+    text-decoration: none;
+}
+#toolbarCollapseSearch > div > a:hover {
+    color: #000;
+}
+#toolbarCollapseSearch form {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 620px;
+    margin-right: 15px;
+}
+
+#toolbarCollapseSearch form input[type="search"] {
+    width: calc(100% - 100px);
+    padding: 15px 20px;
+    border: 1px solid #c3c3c3;
+    border-right: 0;
+    line-height: 16px;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#toolbarCollapseSearch form button[type="submit"] {
+    min-width: 100px;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid #c3c3c3;
+}
+
+#toolbarCollapseSearch form button[type="submit"]:hover,
+#toolbarCollapseSearch form button[type="submit"]:focus,
+#toolbarCollapseSearch form button[type="submit"].active {
+    background-color: rgba(127, 12, 12, 0.9);
+    color: #fff;
+}
+@media (max-width: 1200px) {
+    #toolbarCollapseSearch > div {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+ @media (min-width: 767px) {
+	.nheader .nlogo img {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media (max-width: 400px) {
+	.nheader .nlogo img {
+		margin: 10px;
+		width: 225px !important;
+	}
+}
+@media (max-width: 720px) {
+    #toolbarCollapseSearch  form {
+        margin-right: 0px;
+    }
+    #toolbarCollapseSearch > div > a {
+        display: none;
+    }
+}
+
+
+#toolbarCollapseLangList > div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+#toolbarCollapseLangList > div > a {
+    width: 18%;
+    min-width: 160px;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#toolbarCollapseLangList > div > a:hover, #toolbarCollapseLangList > div > a:focus {
+    color: #000;
+}
+
+#toolbarCollapseLangList > div > a > span {
+    -webkit-align-self: center;
+    align-self: center;
+}
+
+#toolbarCollapseLangList > div > a > span:last-child {
+    padding-left: 10px;
+}
+.nheader button.main_nav_menu_icon {
+        display: block;
+        position: absolute;
+        top: 19px;
+        /*top: calc(50% - 30px);*/
+        right: 10px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 65px;
+        height: 60px;
+        font-size: 0;
+        text-indent: -9999px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        box-shadow: none;
+        border-radius: none;
+        border: none;
+        cursor: pointer;
+        -webkit-transition: background 0.3s;
+        transition: background 0.3s;
+
+        background-color: transparent;
+    }
+	.custom-main p {
+		padding: 0;
+	}
+	.custom-main img {
+		padding: 0;
+	}
+    .nheader button.main_nav_menu_icon:focus {
+        outline: none;
+    }
+
+    .nheader button.main_nav_menu_icon span {
+        display: block;
+        position: absolute;
+        top: 28px;
+        left: 18px;
+        right: 18px;
+        height: 3px;
+        background: grey;
+
+        -webkit-transition: background 0 0.3s;
+        transition: background 0 0.3s;
+    }
+    .nheader button.main_nav_menu_icon span::before,
+    .nheader button.main_nav_menu_icon span::after {
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: grey;
+        content: "";
+    }
+    .nheader button.main_nav_menu_icon span::before {
+        top: -13px;
+
+        -webkit-transition-property: top, -webkit-transform;
+        transition-property: top, transform;
+    }
+    .nheader button.main_nav_menu_icon span::after {
+        bottom: -13px;
+
+        -webkit-transition-property: bottom, -webkit-transform;
+        transition-property: bottom, transform;
+    }
+
+    .nheader {
+        position: relative;
+    }
+    .nheader .nlogo {
+        margin: 5px;
+    }
+    .nheader .nlogo img {
+        display: block;
+        width: calc(100% - 100px);
+        height: auto;
+        max-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nheader .nlogo p {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+    }
+    .nlogo a {
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media (max-width: 1200px) {
+    #toolbarCollapseLangList > div > a {
+        width: 24%;
+    }
+}*/
+
+/*@media (max-width: 800px) {
+    #toolbarCollapseLangList > div > a {
+        width: 33%;
+    }
+}*/
+
+@media (max-width: 510px) {
+    #toolbarCollapseLangList > div > a {
+        min-width: 160px;
+    }
+}
+
+@media (max-width: 405px) {
+    #toolbarCollapseLangList > div > a > span:last-child {
+        padding-left: 0;
+        text-align: center;
+        min-width: 100%;
+        padding-top: 10px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    #toolbarCollapseLangList > div > a {
+        min-width: 60px;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    #toolbarCollapseLangList > div > a > span {
+        -webkit-align-self: unset;
+        align-self: unset;
+        display: inline-block !important;
+    }
+}
+
+#toolbarCollapseTradingPlatform > div {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#toolbarCollapseTradingPlatform > div > h3 {
+    width: 100%;
+    text-align: center;
+}
+
+body > header #toolbarCollapseTradingPlatform > div > div {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    width: calc(100% / 3 - 31px);
+    border-right: 1px solid #b5b4b4;
+    padding: 0 15px;
+}
+
+body > header #toolbarCollapseTradingPlatform > div > div:last-child {
+    border-right: none;
+}
+
+body > header #toolbarCollapseTradingPlatform > div > div div.icons {
+    margin-right: 15px;
+}
+
+body > header #toolbarCollapseTradingPlatform > div > div > div:last-child {
+    height: 100%;
+}
+
+body > header #toolbarCollapseTradingPlatform > div > div h4 {
+    margin-bottom: 15px;
+    margin-top: 7px;
+}
+
+body > header #toolbarCollapseTradingPlatform > div > div div.list a {
+    text-align: left;
+    margin-bottom: 15px;
+    padding-top: 3px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+body > header #toolbarCollapseTradingPlatform > div > div div.list a svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+body > header #toolbarCollapseTradingPlatform > div > div div.list a {
+    text-decoration: none;
+}
+
+body > header #toolbarCollapseTradingPlatform > div > div div.list a svg {
+    fill: rgb(102, 102, 102);
+}
+
+body > header #toolbarCollapseTradingPlatform > div > div div.list a:hover, body > header #toolbarCollapseTradingPlatform > div > div div.list a:focus {
+    color: #000;
+}
+
+#toolbarCollapseSupportPanel > ul {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+body > header #toolbarCollapseSupportPanel > ul li {
+    min-width: 40px;
+    width: 15%;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+body > header #toolbarCollapseSupportPanel > ul li div:first-child {
+    width: 100%;
+}
+
+body > header #toolbarCollapseSupportPanel > ul li > a {
+    font-size: 85%;
+    text-decoration: none;
+}
+
+body > header #toolbarCollapseSupportPanel > ul li > a:hover,
+body > header #toolbarCollapseSupportPanel > ul li > a:focus {
+    color: #000;
+}
+
+#toolbarCollapsePartnerCabinet form {
+    margin-top: 5px;
+}
+
+#toolbarCollapsePartnerCabinet .promo-block > div {
+    display: none;
+}
+
+#toolbarCollapsePartnerCabinet .promo-block > div.active {
+    display: block;
+}
+
+#toolbarCollapsePartnerCabinet .promo-block > div > h2 {
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+#toolbarCollapsePartnerCabinet .promo-block > div > ul {}
+
+#toolbarCollapsePartnerCabinet .promo-block > div > ul > li {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    line-height: 28px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+#toolbarCollapsePartnerCabinet .promo-block > div > ul > li > svg {
+    fill: rgb(102, 102, 102);
+    margin-right: 15px;
+    transition: transform 0.1s ease-out 0.1s;
+    min-width: 28px;
+}
+
+#toolbarCollapsePartnerCabinet .promo-block > div > ul > li:hover {
+}
+
+#toolbarCollapsePartnerCabinet .promo-block > div > ul > li:hover > svg {
+    fill: rgb(127, 12, 12);
+    transform: rotate(-90deg);
+}
+
+#toolbarCollapsePartnerCabinet .main-block .fastbannerform__flex__input input, #toolbarCollapsePartnerCabinet .main-block .fastbannerform__flex__botton button, #toolbarCollapsePartnerCabinet .main-block .fastbannerform__flex__botton input[type="submit"] {
+    max-width: 100%;
+}
+
+#toolbarCollapsePartnerCabinet .main-block > button.btn {
+    width: 49%;
+    white-space: inherit;
+}
+
+#toolbarCollapsePartnerCabinet .main-block > button.btn.active[data-target="ntoolbarClientCabinet"] {
+    color: #fff;
+    background-color: #7f0c0c;
+    border-color: #7f0c0c;
+}
+
+#toolbarCollapsePartnerCabinet .main-block > #ntoolbarClientCabinet form .fastbannerform__flex__botton .btn.btn-gray:hover, #toolbarCollapsePartnerCabinet .main-block > #ntoolbarClientCabinet form .fastbannerform__flex__botton .btn.btn-gray:focus {
+    color: #fff;
+    background-color: #7f0c0c;
+    border-color: #7f0c0c;
+}
+
+#toolbarCollapsePartnerCabinet .main-block > button.btn.active[data-target="ntoolbarPartnerCabinet"] {
+    color: #fff;
+    border-color: #4e274e;
+    background-color: #4e274e;
+}
+
+#toolbarCollapsePartnerCabinet .main-block > #ntoolbarPartnerCabinet form .fastbannerform__flex__botton .btn.btn-gray:hover, #toolbarCollapsePartnerCabinet .main-block > #ntoolbarPartnerCabinet form .fastbannerform__flex__botton .btn.btn-gray:focus {
+    color: #fff;
+    border-color: #4e274e;
+    background-color: #4e274e;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child {
+    border-right: 1px solid #b5b4b4;
+    padding-right: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > h4 {
+    text-align: center;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list {
+    width: 240px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: flex-start;
+    justify-content: center;
+    align-content: flex-start;
+    margin: 15px auto;
+    padding-left: 15px;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a {
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    width: 65px;
+    height: 65px;
+    padding: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a > span {
+    color: #fff;
+    text-align: center;
+    font-family: Tahoma, serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a > span > span {
+    font-size: 70%;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a[data-bonus="250"] {
+    background-color: #716954;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a[data-bonus="100"] {
+    background-color: #522e30;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a[data-bonus="55"] {
+    background-color: #d46b4b;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a[data-bonus="30"] {
+    background-color: #6d6153;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a[data-bonus="club"] {
+    background-color: #6e6e3c;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a[data-bonus="lucky"] {
+    background-color: #463e1a;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a:hover:before {
+    display: block;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.7;
+    display: none;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a:hover:after {
+    display: block;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+    width: 32px;
+    height: 32px;
+    background-image: url('/i/img/site/toolbar/icons/ic_bonus.png');
+    background-position-x: 0;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    display: none;
+
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a[data-bonus="250"]:after {
+    background-position-y: 0;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a[data-bonus="100"]:after {
+    background-position-y: -32px;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a[data-bonus="55"]:after {
+    background-position-y: -64px;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a[data-bonus="30"]:after {
+    background-position-y: -96px;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a[data-bonus="club"]:after {
+    background-position-y: -128px;
+}
+
+body > header #toolbarCollapseReplenish > div > div:first-child > div.list > a[data-bonus="lucky"]:after {
+    background-position-y: -160px;
+}
+
+body > header #toolbarCollapseReplenish > div > div:nth-child(2) {
+    width: 100%;
+    text-align: center;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tabs {
+    text-align: left;
+    border-bottom: 1px solid silver;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tabs > div {
+    display: inline-block;
+    border: 1px solid silver;
+    padding: 5px 25px;
+    margin-bottom: -1px;
+    cursor: pointer;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tabs .active {
+    background: #8b8c8c;
+    color: #fff;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections {
+    padding: 10px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections > div {
+    display: none;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections > div.active {
+    display: block;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections > div > .list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay] {
+    display: block;
+    min-width: 215px;
+    width: 215px;
+    min-height: 73px;
+    height: 73px;
+    background-image: url('/i/img/site/toolbar/icons/pay_logo3.png');
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay]:nth-child(-n+4) {
+    margin-bottom: 13px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay]:hover {
+    background-position-x: -215px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="visa_mastercard"] {
+    background-position-y: -2px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="visa_mastercard"]:hover {
+    background-position-x: -216px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="terminals"] {
+    background-position-y: -837px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="bank_wire_en"] {
+    background-position-y: -154px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="bank_wire_ru"] {
+    background-position-y: -80px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="qiwi"] {
+    background-position-y: -306px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="megatransfer"] {
+    background-position-y: -381px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="megatransfer"]:hover {
+    background-position-x: -213px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="yandex_money_ru"] {
+    background-position-y: -686px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="yandex_money_en"] {
+    background-position-y: -761px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="skrill"] {
+    background-position-y: -535px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="epayments"] {
+    background-position-y: -229px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="neteller"] {
+    background-position-y: -458px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="bitcoin"] {
+    background-position-y: -614px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="webmoney"] {
+    background-position-y: -914px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="solidtrust"] {
+    background-position-y: -986px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="bpay"] {
+    background-position-y: -1144px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="ruru"] {
+    background-position-y: -1064px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="payco"] {
+    background-position-y: -1218px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="payco"]:hover {
+    background-position-x: -214px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="china_union_pay"] {
+    background-position-y: -1295px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="alipay"] {
+    background-position-y: -1370px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="alipay"]:hover {
+    background-position-x: -214px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="maestro"] {
+    background-position-y: -1446px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="wechat"] {
+    background-position-y: -1522px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="bank_mandiri"] {
+    background-position-y: -1601px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="bank_bca"] {
+    background-position-y: -1673px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="bank_bni"] {
+    background-position-y: -1748px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="bank_maybank"] {
+    background-position-y: -1826px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="bank_rhb"] {
+    background-position-y: -1902px;
+}
+
+body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay="bank_cimb"] {
+    background-position-y: -1977px;
+}
+
+.instaicon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(/i/img/site/toolbar/icons_sprite.png);
+    background-position-x: -6px;
+}
+.btn.btn-default.hover, .btn.btn-default:focus, .btn.btn-default:hover {
+	border-color: rgba(30,30,30,.9);
+	background-color: rgba(30,30,30,.9);
+}
+.btn.btn-default {
+	background-color: rgba(50,50,50,.9);
+	color: #fff;
+	border-color: rgba(50,50,50,.9);
+}
+.instaicon.instaicon-search {
+    background-position-y: -176px;
+}
+
+.instaicon.instaicon-briefcase {
+    background-position-y: -5px;
+}
+
+.instaicon.instaicon-headphones {
+    background-position-y: -108px;
+}
+
+.instaicon.instaicon-clock {
+    background-position-y: -40px;
+}
+
+.instaicon.instaicon-trading_platform {
+    background-position-y: -141px;
+}
+
+.instaicon.instaicon-plastic_card {
+    background-position-y: -73px;
+}
+
+.instaicon.instaicon-android {
+    width: 42px;
+    height: 42px;
+    background-position-x: -146px;
+    background-position-y: -131px;
+}
+
+.instaicon.instaicon-apple {
+    width: 42px;
+    height: 42px;
+    background-position-x: -146px;
+    background-position-y: -90px;
+}
+
+.instaicon.instaicon-windows {
+    width: 42px;
+    height: 42px;
+    background-position-x: -146px;
+    background-position-y: -48px;
+}
+
+.instaicon.instaicon-web {
+    width: 42px;
+    height: 42px;
+    background-position-x: -146px;
+    background-position-y: -6px;
+}
+
+.instaicon.media_toolbar {
+    width: 52px;
+    height: 52px;
+    background-position-x: -83px;
+    background-position-y: -56px;
+}
+
+.instaicon.instaicon-chevron-down,
+.instaicon.instaicon-chevron-up {
+    width: 10px;
+    background-image: url(/i/img/site/toolbar/select.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.instaicon.instaicon-chevron-up {
+    transform: scaleY(-1);
+}
+
+#ntoolbar > .caret {
+    width: 10px;
+    height: 25px;
+    display: inline-block;
+    background-image: url(/i/img/site/toolbar/select.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transition-property: transform;
+    transition-duration: .35s;
+    transition-timing-function: ease;
+}
+
+.collapse {
+    display: none;
+}
+
+.collapse.in {
+    display: block;
+}
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+/* custom css */
+.m-d-v h4 {
+	text-align: left;
+	margin-left: 10%;
+}
+
+
+
+@media (max-width: 1350px) {
+    #ntoolbar > div:nth-child(-n+2) > button > .caption {
+        display: none;
+    }
+}
+
+@media (max-width: 1250px) {
+    body > header [id^="toolbarCollapse"] > div .promo-block {
+        margin-left: 15px;
+    }
+
+    #ntoolbar > div:nth-child(-n+3) > button > .caption {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    body > header #toolbarCollapseOpenAccount > div .promo-block p {
+        font-size: 14px;
+    }
+
+    body > header [id^="toolbarCollapse"] > div .promo-block {
+        width: 65%;
+        margin-right: 15px;
+        margin-left: 50px;
+    }
+
+    body > header [id^="toolbarCollapse"] > div .main-block {
+        width: 50%;
+        margin-right: 15px;
+    }
+
+    body > header [id^="toolbarCollapse"] > div.left .image-block {
+        display: none;
+    }
+
+    body > header [id^="toolbarCollapse"] > div.left, body > header [id^="toolbarCollapse"] > div.right {
+        max-width: 1200px;
+    }
+
+    body > header [id^="toolbarCollapse"] > div.left {
+        padding-right: 0;
+    }
+
+    body > header [id^="toolbarCollapse"] > div.right {
+        padding-left: 0;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div {
+        flex-wrap: wrap;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div div.icons {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div h4 {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div > div:last-child {
+        width: 100%;
+    }
+
+    body > header #toolbarCollapseSupportPanel > ul {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    body > header #toolbarCollapseReplenish > div > div .tab_sections > div > .list {
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay] {
+        margin-right: 15px;
+    }
+
+    body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay]:nth-child(7), body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay]:nth-child(8) {
+        display: none;
+    }
+}
+
+@media (max-width: 1150px) {
+    #ntoolbar > div:nth-child(-n+4) > button > .caption {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    body > header #toolbarCollapseSupportPanel > ul {
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    body > header #toolbarCollapseSupportPanel > ul li {
+        width: 25%;
+    }
+
+    body > header #toolbarCollapseSupportPanel > ul li:nth-child(-n+4) {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    #ntoolbar > div:nth-child(-n+5) > button > .caption {
+        display: none;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div {
+        width: calc((100% / 2) - 31px);
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div > div:last-child {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body > header #toolbarCollapseReplenish > div > div:first-child {
+        display: none;
+    }
+
+    body > header #toolbarCollapseReplenish > div > div:nth-child(2) {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay] {
+        margin-right: 13px;
+    }
+
+    body > header #toolbarCollapseReplenish > div > div .tab_sections > div > .list {
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 805px) {
+    #ntoolbar > div > .btn > span.caption {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    body > header [id^="toolbarCollapse"] > div .promo-block {
+        display: none;
+    }
+
+    body > header [id^="toolbarCollapse"] > div .main-block {
+        width: 90%;
+        max-width: 350px;
+        margin-right: 0;
+    }
+
+    body > header [id^="toolbarCollapse"] > div .main-block h2, body > header [id^="toolbarCollapse"] > div > h2 {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    body > header #toolbarCollapseSupportPanel > ul li:nth-child(n) {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    body > header #toolbarCollapseSupportPanel > ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div {
+        width: 80%;
+        min-width: 300px;
+        -webkit-justify-content: center;
+        justify-content: center;
+        border: 0;
+        border-bottom: 1px solid #b5b4b4;
+        padding: 15px 0;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div > h2 {
+        margin-bottom: 0;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div:last-child {
+        border: 0;
+        padding-bottom: 0;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div div.icons {
+        display: none;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div div.list {
+        min-width: 300px;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div div.list a {
+        border: 1px solid #b5b4b4;
+        text-align: center;
+        padding: 15px 15px 15px 25px;
+        border-radius: 7px;
+        margin-bottom: 5px;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div div.list a:before {
+        display: none;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div div.list a:hover, body > header #toolbarCollapseTradingPlatform > div > div div.list a:focus {
+        border-color: #7f0c0c;
+        color: #7f0c0c;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div div.list a:hover svg, body > header #toolbarCollapseTradingPlatform > div > div div.list a:focus svg {
+        fill: rgb(127, 12, 12);
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div div.list a svg {
+        width: 42px;
+        height: 42px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div div.list a span {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    body > header #toolbarCollapseReplenish > div > div .tab_sections {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    body > header #toolbarCollapseReplenish > div > div .tab_sections a[data-pay]:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    body > header #toolbarCollapseReplenish > div > div .tabs {
+        text-align: center;
+    }
+
+    body > header #toolbarCollapseReplenish > div > div .tabs > div {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 300px) {
+    body > header #toolbarCollapseSupportPanel > ul li:nth-child(n) {
+        width: 100%;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div {
+        min-width: 100px;
+    }
+
+    body > header #toolbarCollapseTradingPlatform > div > div ul {
+        min-width: 100px;
+    }
+}
+
+body > header #main-menu-wrapper .logo {
+    max-width: 260px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > header #main-menu-wrapper .logo a {
+    text-decoration: none;
+}
+
+body > header #main-menu-wrapper .logo p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+body > header #main-menu-wrapper #main-menu {
+    max-height: 820px;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    max-width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #f9f9f9 0%, #fff 70%);
+}
+
+body > header #main-menu-wrapper #main-menu div.dropdown {
+    margin-top: 125px;
+}
+
+body > header #main-menu-wrapper nav#main-menu > ul > li.active:after {
+    top: 195px;
+}
+
+@media (max-width: 1024px) {
+    body > header #main-menu-wrapper {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    body > header .nheader {
+        display: none;
+    }
+
+    body > header #main-menu-wrapper {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    body > header #main-menu-wrapper {
+        display: -webkit-flex;
+        display: flex;
+        max-width: 1200px;
+        width: auto;
+        padding: 5px 25px;
+    }
+
+    body > header #main-menu-wrapper .logo {
+    }
+
+    body > header #main-menu-wrapper #main-menu {
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 42px;
+        background: transparent;
+        border-top: 0;
+    }
+
+    body > header #main-menu-wrapper #main-menu div.dropdown {
+        margin-top: 59px;
+    }
+
+    body > header #main-menu-wrapper nav#main-menu > ul > li.active:after {
+        top: 127px;
+    }
+}
+
+/** АнтиХак **/
+@media (min-width: 991px) {
+    body {
+        padding-top: 0;
+    }
+
+    body > header {
+        position: relative;
+    }
+}
+
+
+
+
+
+
+/*-------------main css start now-----------------*/
+
+
+/* page style */
+.logo-menu {
+	padding: 5px 0;
+}
+.customss {
+	margin-top: 3.5%;
+	float: right;
+}
+.menu-area {
+	padding: 5px 0;
+}
+a, a:focus, a:active, a:hover, object, embed { outline: none; text-decoration: none; }
+:-moz-any-link:focus { outline: none; }
+input::-moz-focus-inner { border: 0; }
+:focus { outline: 0; } 
+.navbar { border-bottom: 4px solid #888; }
+.navbar a { -webkit-transform:translate3d(0,0,0); } /* Safari hover flicker fix */
+.nav > li > a:focus, .nav > li > a:hover {
+	background-color: transparent !important;
+}
+.customss .nav > li > a {
+	position: relative;
+	display: block;
+	padding: 10px 10px;
+	color: #000;
+}
+
+.customss .nav > li :hover {
+	text-decoration: underline;
+	text-decoration: underline !important;
+}
+.navbar-toggle .icon-bar {
+		background: #000 !important;
+	}
+
+
+/* Disable Toggle style : Use this when using mouse over action to open dropbox
+--------------------------------------- */
+/* Dropdown Toggle on style */
+.navbar .nav li.dropdown.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.active > .dropdown-toggle, 
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background: inherit; /* Set to inherit when using mouse hover to open dropdown */
+  color: inherit;
+  }   
+  /* Toggle off style */
+  .navbar .nav li.dropdown.open.active > .dropdown-toggle,
+  .navbar .nav > li.dropdown > a:focus { 
+  background: inherit;
+  color: inherit;
+  }
+         
+  /* Toggle caret*/
+  .navbar .nav li.dropdown > .dropdown-toggle .caret { }
+    /* Toggle caret hover */
+    .navbar .nav li.dropdown > a:hover .caret, 
+    .navbar .nav li.dropdown > a:focus .caret {
+      border-bottom-color: #333;
+      border-top-color: #333;
+      }
+      /* Toggle caret active */
+      .navbar .nav li.dropdown.open > .dropdown-toggle .caret, 
+      .navbar .nav li.dropdown.active > .dropdown-toggle .caret, 
+      .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+        border-bottom-color:#333;
+        border-top-color: #333;
+        }
+
+.menu-area-subs {
+	background: #790604;
+	padding: 30px 0;
+}
+
+.sub-menu-block {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sub-menu-block li a {
+  color: #fff;
+  margin-left: 5%;
+}
+.sub-menu-block li {
+	padding: 10px 0;
+}
+.icon-sub {
+    width: 40px;
+    height: 40px;
+}
+.second-m {
+	background: #620605;
+	padding: 30px 0;
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	opacity: .95;
+	width: 100%;
+}
+.nav.navbar-nav button {
+	background: none;
+	border: none;
+	color: #000;
+	padding: 9px 9px;
+}
+/*-------------Header part ends-----------------*/
+.bg-head{
+    background: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-head h1{
+    padding: 15px 0px 10px 0px;
+    color: #000;
+    font-size: 25px;
+    font-family: proxinova_reg;
+    padding-bottom: 300px;
+}
+.bg-head .first {
+	border: 1px solid #fff;
+	padding: 8px 20px;
+	position: absolute;
+	margin-top: -9%;
+	color: #fff;
+	left: auto;
+	background: rgba(33, 33, 33, .7);
+	border-radius: 5px;
+	font-family: proxinova_reg;
+}
+.bg-head .second {
+    border: 1px solid #fff;
+    padding: 8px 20px;
+    position: absolute;
+    margin-top: -9%;
+    color: #fff;
+    right: 0;
+    background: rgba(33, 33, 33, .7);
+    border-radius: 5px;
+    font-family: proxinova_reg;
+}
+.bg-head .first:hover,.bg-head .second:hover{
+    background: rgb(255,255,255, .03);
+    color: #000;
+    border: 1px solid #000;
+    transition: all linear .3s;
+}
+/*---------Header part ends-------------*/
+#content h2 {
+	font-size: 18px;
+	color: #000000;
+	padding: 46px 0px 60px;
+	font-family: proxinova_reg;
+	line-height: 30px;
+}
+/*---------Content part ends-------------*/
+#news h3{
+    font-size: 16px;
+    color: #000;
+    font-family: proxinova_reg;
+    font-weight: 700;
+    padding: 20px 0px 0px;
+}
+#news img{
+    display: inline-block;
+}
+#news i{
+    padding-right: 10px;
+    padding-top: 26px;
+}
+#news .fa.fa-clock-o.pad {
+	margin-top: -19px;
+}
+#news .fa.fa-clock-o.pad2 {
+	margin-top: -16px;
+}
+#news span{
+    font-size: 13px;
+    font-family: proxinova_light;
+    padding-bottom: 15px;
+}
+#news p {
+	font-size: 13px;
+	font-family: proxinova_light;
+	padding-top: 15px;
+	padding-bottom: 60px;
+}
+/*---------News part ends-------------*/
+/*-------------App part ends-----------------*/
+#ftr_up{
+    background: #2e2e2e;
+}
+#ftr_up .icon{
+    text-align: center;
+    padding: 20px;
+}
+#ftr_up .icon:hover h5, #ftr_up .icon:hover p{
+    color: #fff;
+}
+#ftr_up .icon i{
+    font-size: 50px;
+    color: #908e8f;
+}
+#ftr_up .icon:hover i{
+    color: #7e0c0c;
+}
+#ftr_up .icon h5{
+    font-weight: 600;
+    font-size: 18px;
+    color: #908e8f;
+    padding: 15px 0px 5px;
+}
+#ftr_up .icon p{
+    color: #908e8f;
+    padding: 0px 0px 15px;
+}
+#ftr_up .icon .divider{
+    height: 130px;
+    width: 1px;
+    background: #908e8f;
+    position: absolute;
+    margin-top: -128px;
+    margin-left: 152px;
+}
+#ftr_up .icon .divider2{
+    position: absolute;
+    height: 130px;
+    width: 1px;
+    background: #908e8f;
+    margin-top: 0px;
+    margin-left: -22px;
+}
+/*-------------ftr_up part ends-----------------*/
+footer{
+    background: url(../images/footer_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer .menu h3{
+    padding: 15px 0px;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+footer .menu h3:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-left: 2px dotted #908e8f;
+    height: 522px;
+}
+
+footer .menu ul li{
+    padding: 10px 0px 5px 30px;
+    font-weight: 500;
+}
+footer .menu ul li a{
+    color: #fff;
+}
+footer .menu ul li a:hover{
+    text-decoration: underline;
+}
+footer .menu ul li a p{
+    margin-left: 15px;
+}
+footer .menu ul li a p:after{
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -120px;
+    height: 2px;
+    width: 20px;
+    border-top: 2px dotted #908e8f;
+}
+footer .only-hover a i:hover {
+	-webkit-transition: all linear .4s;
+	-o-transition: all linear .4s;
+	transition: all linear .4s;
+	background: #2e2e2e !important;
+	color: #fff !important;
+	transform: rotate(360deg);
+}
+footer .menu .middle{
+    padding: 15px 0px;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+footer .menu .middle:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-left: 2px dotted #908e8f;
+    height: 278px;
+}
+
+footer .menu ul .menu2 li{
+    padding: 10px 0px 5px 30px;
+    font-weight: 500;
+}
+footer .menu ul .menu2 li a{
+    color: #fff;
+}
+footer .menu ul .menu2 li a:hover{
+    text-decoration: underline;
+}
+footer .menu ul .menu2 li a p{
+    margin-left: 15px;
+}
+footer .menu ul .menu2 li a p:after{
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -120px;
+    height: 2px;
+    width: 20px;
+    border-top: 2px dotted #908e8f;
+}
+footer .menu .last{
+    padding: 15px 0px;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+footer .menu .last:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-left: 2px dotted #908e8f;
+    height: 209px;
+}
+
+footer .menu ul .menu3 li{
+    padding: 10px 0px 5px 30px;
+    font-weight: 500;
+}
+footer .menu ul .menu3 li a{
+    color: #fff;
+}
+footer .menu ul .menu3 li a:hover{
+    text-decoration: underline;
+}
+footer .menu ul .menu3 li a p{
+    margin-left: 15px;
+}
+footer .menu ul .menu3 li a p:after{
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -120px;
+    height: 2px;
+    width: 20px;
+    border-top: 2px dotted #908e8f;
+}
+footer .menu .all .latest{
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 50px;
+    position: absolute;
+    padding: 10px 60px;
+    border-radius: 5px;
+}
+footer .menu .all .latest:hover{
+    -webkit-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    transition: all linear .4s;
+    background: #2e2e2e;
+    color: #fff;
+}
+footer .menu .all .fa-windows{
+    line-height: 40px;
+    text-align: center;
+    background: #090909;
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 5px;
+    width: 126px;
+    height: 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+}
+footer .menu .all .fa-windows:hover{
+    background: #7e0c0c;
+}
+footer .menu .all .fa-windows span{
+    padding-left: 5px;
+}
+footer .menu .all .fa-globe{
+   line-height: 40px;
+    text-align: center;
+    background: #090909;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 5px;
+    width: 126px;
+    height: 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    border-radius: 3px;
+}
+footer .menu .all .fa-globe:hover{
+    background: #7e0c0c;
+}
+footer .menu .all .fa-globe span{
+    padding-left: 5px;
+}
+
+footer .menu .all .fa-apple{
+    line-height: 40px;
+    text-align: center;
+    background: #090909;
+    position: absolute;
+    margin-top: 150px;
+    margin-right: 5px;
+    width: 126px;
+    height: 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+}
+footer .menu .all .fa-apple:hover{
+    background: #7e0c0c;
+}
+footer .menu .all .fa-apple span{
+    padding-left: 5px;
+}
+
+footer .menu .all .fa-play{
+    line-height: 40px;
+    text-align: center;
+    margin-left: 150px;
+    background: #090909;
+    position: absolute;
+    margin-top: 150px;
+    margin-right: 5px;
+    width: 126px;
+    height: 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+}
+footer .menu .all .fa-play:hover{
+    background: #7e0c0c;
+}
+footer .menu .all .fa-play span{
+    padding-left: 5px;
+}
+footer .menu .all p {
+	position: absolute;
+	color: #fff;
+	margin-top: 200px;
+	font-size: 11px;
+}
+footer .menu .all .fa-facebook{
+    color: #7e0c0c;
+    margin-top: 250px;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+footer .menu .all .fa-twitter{
+    margin-left: 60px;
+    color: #7e0c0c;
+    margin-top: 250px;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+footer .menu .all .fa-google-plus{
+    margin-left: 120px;
+    color: #7e0c0c;
+    margin-top: 250px;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+footer .menu .all .fa-youtube{
+    margin-left: 180px;
+    color: #7e0c0c;
+    margin-top: 250px;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+footer .menu .all .fa-rss{
+    margin-left: 240px;
+    color: #7e0c0c;
+    margin-top: 250px;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+/*-------------Footer part ends-----------------*/
+#cpy{
+    background: url(../images/copyright.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55px;
+}
+#cpy .flag{
+    position: absolute;
+    margin-top: 20px;
+}
+#cpy span{
+    margin-top: 18px;
+    padding-left: 40px;
+    position: absolute;
+    color: #fff;
+}
+#cpy p{
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+}
+#cpy .ico i{
+    margin-top: 10px;
+    background: #000300;
+    padding: 10px;
+    color: #fff;
+}
+#cpy .ico i:hover{
+    color: #8d0100;
+}
+/*-------------cpy part ends-----------------*/
+#cpy_lst{
+    background: url(../images/copyright.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 130px;
+    border-top: 2px solid #2c2c2c;
+}
+#cpy_lst ul{
+    padding-top: 10px;
+}
+#cpy_lst ul li{
+    padding: 5px 0px 0px 0px;
+    color: #fff;
+    font-size: 12px;
+}
+/*-------------cpy_lst part ends-----------------*/
+
